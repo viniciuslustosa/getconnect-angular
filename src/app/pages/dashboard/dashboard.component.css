@@ -1,0 +1,59 @@
+section {
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.form-field {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: #000;
+  text-align: left;
+  padding: 1rem;
+  margin: 0 !important;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.label-title {
+  background-color: #FFC700;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.title-section {
+  display: flex; border-bottom: 3px solid #FFC700;
+}
+
+.form-field {
+  min-width: 100%;
+}
+
+.image {
+  max-width: 120px;
+}
+
+.header-image {
+  background-size: cover;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spinner {
+  max-width: 50px;
+}

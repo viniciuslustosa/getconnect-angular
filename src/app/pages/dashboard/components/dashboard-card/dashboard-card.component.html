@@ -1,0 +1,40 @@
+<section>
+  <header>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <div fxFlex="50" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-card class="card" *ngIf="film">
+          <div style="display: flex;">
+            <div style="display: flex; flex-direction: column">
+              <span class="font-10 color-F5F5F5">
+                {{ film.Date | date: 'dd/MM/yyyy'}}
+              </span>
+              <img class="image" [src]="film.Poster" [alt]="film.Title">
+              <div mat-card-avatar class="header-image"></div>
+            </div>
+            <mat-card-header class="card-header">
+              <mat-card-title>
+                {{ film.Title }}
+              </mat-card-title>
+              <mat-card-subtitle>
+                {{ film.Year }} | {{ film.Runtime }} | {{ film.imdbRating }}
+              </mat-card-subtitle>
+              <mat-card-subtitle>{{ film.Plot }}</mat-card-subtitle>
+              <mat-card-subtitle style="display: flex;">
+                <div *ngFor="let genre of film.Genre.split(', ')">
+                  <mat-chip class="chip-box" cdkDrag>
+                    {{ genre }}
+                  </mat-chip>
+                </div>
+              </mat-card-subtitle>
+            </mat-card-header>
+          </div>
+          <div *ngIf="removable">
+            <button mat-icon-button aria-label="Delete Icon" (click)="remove();">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </header>
+</section>
