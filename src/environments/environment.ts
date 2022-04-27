@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_URL: 'http://localhost:3000/ws',
+  BASE_URL: 'https://wrapp-nest-js.herokuapp.com/ws',
   API_KEY: 'fcadf24b'
 };
 
